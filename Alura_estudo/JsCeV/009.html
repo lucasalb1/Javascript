@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-size: 1.1em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sessão de Passaporte</h1>
+    <input type="text" id="nacionalidade" name="nacionalidade" placeholder="Sua nacionalidade">
+    <input type="submit" value="Enviar" onclick = passa()>
+    <div id="res">
+    </div>
+    <script>
+        function passa(){
+            var nacio = document.getElementById('nacionalidade').value
+            var doc = document.getElementById('res')
+
+            if (nacio.toLowerCase() == "brasil"){
+                doc.innerHTML = '<br> Você é brasileiro';
+            }
+            else {
+                doc.innerHTML = '<br> Você é estrangeiro';
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var n1 = 1542.2
+        document.write(n1.toFixed(2)) //adicionar 0 no final do número
+        document.write(' Quebra de linha </br> </br>')
+        document.write(n1.toFixed(2).replace('.', ',')) // Trocar o ponto pela vírgula
+        document.write(' Quebra de linha </br> </br>')
+        document.write(n1.toLocaleString('pt-BR', {style: 'currency', currency:'BRL'}))
+        document.write(' Quebra de linha </br> </br>')
+        document.write(n1.toLocaleString('pt-BR', {style: 'currency', currency:'EUR'}))
+        document.write(' Quebra de linha </br> </br>')
+        document.write(n1.toLocaleString('pt-BR', {style: 'currency', currency:'USD'}))
+        // Colocar o cifrão das moedas, BRL, EUR, USD..
+
+        // Formatação de números
+    
+    </script>
+</body>
+</html>

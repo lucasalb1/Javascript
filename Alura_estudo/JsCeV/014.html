@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(80, 125, 248);
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        section{
+            background-color: white;
+            width: 550px;
+            height: 220px;
+            border-radius: 5px;
+            padding: 10px;
+            margin: auto;
+        }
+        header, footer{
+            text-align: center;
+            color: white;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Vamos contar</h1>
+    </header>
+    <section>
+        <div>
+            <p>Início <input type="number" name="ini" id="ini"> </p>
+
+            <p>Fim <input type="number" name="fin" id="fin"> </p>
+
+            <p>Passo <input type="number" name="pas" id="pas"> </p>
+
+            <input type="submit" value="Contar" onclick="contador()"> 
+        </div>
+
+        <div id="contando">
+            <p>Preparando a contagem</p>
+        </div>    
+    </section>
+
+    <footer>
+        <div> &copy; Curso em vídeo</div>
+    </footer>
+
+    <script src="mainly.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(165, 127, 76);
+        }
+    </style>
+</head>
+<body>
+    <h1>Radar de velocidade</h1>
+    Velocidade do carro <input type="number" name="rd" id="rd"> Km/h
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div id="res"></div>
+    <script>
+        function calcular(){
+            var km = document.getElementById('rd')
+            var r = document.getElementById('res')
+            var vel = Number(km.value)
+            r.innerHTML = `<p> Sua velocidade é ${vel} km/h </p>`
+            if (vel > 60) {
+                r.innerHTML += '<p> Ultrapassou o limite de velocidade e está multado </p>'
+            }
+            r.innerHTML += '<p> Use cinto de segurança. </p>'
+
+        }
+    </script>
+</body>
+</html>

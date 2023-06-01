@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Olá, mundo!</h1>
+    <p>Aqui estamos aprendendo</p>
+    <script>
+
+        var n1 = Number(window.prompt('Digite um número:')) 
+        // prompt sempre será string, por isso devemos fazer a conversão de tipo
+        var n2 = Number(window.prompt('Digite outro número:')) 
+        // Number.parseInt(n) (inteiros), Number.parsefloat(n) (reais), ou podemos usar apenas 'Number', pois reconhece números inteiros e reais
+        var s = n1 + n2
+        window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`) /* converter de number para string utilizamos 'String(n)' ou 'n.toString()', não seria necessário para esse exemplo acima, utilizamos apenas para exemplificar
+
+         (number + number) = adição
+         (string + string) = concatenação 
+
+         `${n1}` é o uso de template string, usamos crase, simbolo de dólar e as chaves, deixando o código mais claro.  */
+
+    </script>
+</body>
+</html>

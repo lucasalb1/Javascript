@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 1.1em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sistema de datas</h1>
+    <div id="res"></div>
+    <script>
+        var data = new Date()
+        var dia = data.getDay()
+        var re = document.querySelector('#res')
+
+        switch(dia) {
+            case 0:
+                re.innerHTML = 'Hoje é domingo'
+            break
+            case 1:
+                re.innerHTML = 'Hoje é segunda'
+            break
+            case 2: 
+                re.innerHTML = 'Hoje é terca'
+            break
+            case 3: 
+                re.innerHTML = 'Hoje é quarta'
+            break
+            case 4: 
+                re.innerHTML = 'Hoje é quinta'
+            break
+            case 5: 
+                re.innerHTML = 'Hoje é sexta'
+            break
+            case 6: 
+                re.innerHTML = 'Hoje é sábado'
+            break
+            default:
+                re.innerHTML = '[erro] dia inválido'
+            break
+        }
+    </script>
+</body>
+</html>
